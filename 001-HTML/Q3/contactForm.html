@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Contact form</title>
+    <style>
+        * {
+
+            margin: 0px;
+            padding: 0px;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-indent: 10px;
+
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+
+        header h1 {
+            font-size: 34px;
+            text-decoration: underline;
+            font-style: italic;
+            color: rgba(0, 0, 0, 0.933);
+            padding: 10px 40px;
+            text-align: center;
+
+
+        }
+
+        label {
+            display: block;
+            width: fit-content;
+            font-size: 16px;
+            padding: 10px 0px;
+
+        }
+
+
+
+        .form-input {
+            height: 48px;
+            border-radius: 8px;
+            border: solid;
+            border-color: rgba(0, 0, 0, 0.589);
+            /* width: 1320px; */
+            width: 100%;
+            border-width: 0.2px;
+            box-sizing: border-box;
+
+            border-width: 3px;
+
+        }
+
+        #form {
+            justify-content: center;
+            align-items: center;
+            padding: auto;
+            border-color: red;
+            border-radius: 8px;
+
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            margin: auto;
+            border-radius: 3px;
+            width: 250px;
+            height: 50px;
+            margin: 30px auto;
+            
+        }
+
+        button:hover{
+            box-shadow: 8px 4px 20px rgba(0, 0, 0, 0.273);
+        }
+
+        button:active{
+            box-shadow: 2px 0.5px 20px rgba(0, 0, 0, 0.273);
+
+        }
+
+        .userName {
+            display: flex;
+            /* width: 1330px; */
+            /* width: 100%; */
+            gap: 20px;
+
+        }
+
+        .userName input {
+            /* width: 650px; */
+            width: 100%;
+        }
+
+        .form-items {
+
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+        }
+
+
+        #outerdiv {
+            border: solid;
+            display: flex;
+            border-width: 0.5px;
+            justify-content: center;
+            box-sizing: border-box;
+            width: fit-content;
+            border-radius: 5px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.105);
+            margin:auto;
+            padding: 20px ;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <form id="form" method="post">
+        <header>
+            <h1>Sample Contact Form</h1>
+        </header>
+        <div id="outerdiv">
+            <div class="form-items fi">
+                <div class="userName">
+                    <div>
+                        <label for="FIrstName">First Name</label>
+                        <input id="FIrstName" class="form-input" type="text"/>
+                    </div>
+
+                    <div class="fi">
+                        <label for="lastName">Last Name</label>
+                        <input id="lastName" class="form-input" type="text"/>
+                    </div>
+                </div>
+                <div class="fi">
+                    <label for="userMail">Email</label>
+                    <input id="userMail" class="form-input" type="email"/>
+                </div>
+
+                <div class="fi">
+                    <label for="userMobileNumber">Mobile Number</label>
+                    <input id="userMobileNumber" class="form-input" type="tel"/>
+                </div>
+
+                <div class="fi">
+                    <label for="radiobtn">Suppor Type</label>
+                    <input id="radiobtn" class="form-radio" type="radio" value="Regular" checked/> Regular
+                    <input id="radiobtn" class="form-radio" type="radio" value="Premium" /> Premium
+                </div>
+
+
+                <div class="fi">
+                    <label for="reason">Reason For Contact</label>
+                    <input id="reason" class="form-input" type="text"/>
+                </div>
+
+                <div class="fi">
+                    <label for="Description">Description</label>
+                    <textarea class="form-input" id="Description"></textarea>
+                </div>
+                <button type="submit"> SUBMIT</button>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>

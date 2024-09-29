@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device, initial-scale=1.0" />
+    <title>PanCard Layout</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #mainDiv {
+            min-width: 580px;
+            width: fit-content;
+
+            border: 1px solid black;
+            height: 100%;
+            margin: 30px auto;
+            background-color: aqua;
+            border-radius: 5px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-evenly;
+            height: fit-content;
+            flex-grow: 1;
+        }
+
+        .headerContent {
+            /* width: 250px; */
+            /* border: 1px solid black; */
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            justify-content: center;
+
+        }
+
+        .headerContent p {
+            align-items: center;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 25pxpx;
+            letter-spacing: 2px;
+            font-weight: bolder;
+
+        }
+
+        /* #t1-el{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        } */
+        #t1 {
+            display: flex;
+            align-items: center;
+        }
+
+        #t2 img {
+
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+
+
+
+        }
+
+        #t2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .flex-item-t2 {
+            flex-basis: 100px;
+        }
+
+
+
+        #outerDiv-PanContent {
+            display: grid;
+            grid-template-columns: 2fr 300px;
+            grid-template-rows: 3fr 90px 90px;
+            height: fit-content;
+
+
+        }
+
+
+        #pan-content {
+            /* padding: 20px; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .pan-content-el {
+            padding: 5px 20px;
+
+        }
+
+        #pan-content img {
+            width: 190px;
+            height: 190px;
+            object-fit: contain;
+
+        }
+
+        #pan-content2 {
+            /* grid-column: 1/2;
+            grid-row: 2/3; */
+            padding: 5px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 2px;
+        }
+
+        #pan-content-el2 p,
+        h2 {
+            font-size: 28px;
+            text-align: center;
+
+        }
+
+
+
+        #pan-content3 {
+            display: flex;
+            grid-column: 2/3;
+            grid-row: 1/3;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #pan-content3 img {
+
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+            border: 15px solid white;
+            margin: 8px;
+        }
+
+        #pan-content4 {
+            display: flex;
+            gap: 100px;
+            padding: 15px 20px;
+
+            justify-content: flex-start;
+
+
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+
+        .pan-content4-el {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <header>
+            <div id="t1" class="headerContent">
+                <div id="t1-el">
+                    <p>आयकर विभाग</p>
+                    <p>INCOME TAX DEPARTMENT</p>
+                </div>
+            </div>
+
+            <div id="t2" class="headerContent flex-item-t2">
+                <img src="image/pngwing.com.png" />
+            </div>
+            <div id="t3" class="headerContent">
+
+                <p>भारत सरकार</p>
+                <p>GOVT. OF INDIA</p>
+            </div>
+        </header>
+        <hr />
+
+        <div id="outerDiv-PanContent">
+            <div id="pan-content">
+                <div id="pan-content-el1" class="pan-content-el">
+                    <img src="image/portrait-young-businessman-with-mustache-glasses-3d-rendering.jpg">
+                </div>
+                <div id="pan-content-el2" class="pan-content-el">
+                    <p>स्थायी खाता संख्या कार्ड</p>
+                    <p>Permanent Account Number Card</p>
+                    <h2>DP***AN0***</h2>
+                </div>
+
+            </div>
+
+
+
+            <div id="pan-content2">
+                <div id="pan-content2-el1" calss="pan-content2-el">
+                    <p>नाम/Name</p>
+                    <h5>ARJUN VIJAYARAJA B</h5>
+                </div>
+
+                <div id="pan-content2-el2" calss="pan-content2-el">
+                    <p>पिता का नाम/Fathe's Name</p>
+                    <h5>XXXXXXXXXXIAM</h5>
+                </div>
+            </div>
+
+            <div id="pan-content3" class="pan-content3-el">
+                <img src="image/pngwing.com (1).png">
+            </div>
+
+            <div id="pan-content4">
+                <div id="pan-content4-el1" calss="pan-content4-el">
+
+                    <p>जन्म तिथि/Date of birth
+                    </p>
+                    <h5>xx/xx/xxxx</h5>
+                </div>
+
+                <div id="pan-content4-el2" calss="pan-content4-el">
+                    <h5 style="font-style: italic; text-decoration: underline;">Arju Vijayaraja</h5>
+                    <p>हस्ताक्षर / Signature</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

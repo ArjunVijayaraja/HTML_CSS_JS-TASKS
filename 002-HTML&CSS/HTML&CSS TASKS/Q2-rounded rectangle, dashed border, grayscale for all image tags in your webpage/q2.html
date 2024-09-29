@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rounded-dashed-</title>
+    <style>
+        #roundedRectangle {
+            border-radius: 50%;
+            width: 200px;
+            height: 100px;
+            background-color: grey;
+        }
+
+        .contents{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #DashedBorder{
+            width: 100px;
+            height: 100px;
+            border-style: dashed;
+            border-color: red;
+        }
+
+        #ImgGreyScale{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            filter: grayscale(100%);
+        }
+
+        .contents p,img{
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="contents">
+        <label>Rounded Rectangle </label>
+        <p id="roundedRectangle"></p>
+    </div>
+
+    <div class="contents">
+        <label>Dashed Border </label>
+        <p id="DashedBorder"></p>
+    </div>
+
+    <div class="contents">
+        <label>Grey Scale for the imageTag </label>
+        <img id="ImgGreyScale" src="images/pexels-minan1398-1066176.jpg" alt="some error occured" />
+    </div>
+
+    
+</body>
+
+</html>

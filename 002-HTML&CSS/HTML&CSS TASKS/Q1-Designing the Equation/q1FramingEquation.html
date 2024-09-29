@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Equation using HTML & CSS</title>
+    <style>
+        #equation {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: fit-content;
+            align-items: center;
+        }
+
+        #RHS {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #RHS p {
+            padding: 0px 10px;
+
+        }
+
+        #LHS p {
+            padding: 0px 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="equation">
+        <div id="LHS">
+            <p>&part; <span><sup>2</sup></span><span style="font-style: italic;">u</span></p>
+            <hr />
+            <p>&part;t<sup>2</sup></p>
+        </div>
+
+        <div id="LHS">
+            <p> = </p>
+        </div>
+
+        <div id="RHS">
+            <div>
+                <p>c<sup>2</sup> </p>
+            </div>
+
+            <div>
+                <p>&part; <span><sup>2</sup></span><span style="font-style: italic;">u</span></p>
+                <hr />
+                <p>&part;x<sup>2</sup></p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clip Property</title>
+        <style>
+            body{
+                background-color: aqua;
+            }
+            img{
+                position: absolute;
+                clip: rect(0px,100px,120px,0px);
+            }
+        </style>
+    </head>
+    <body>
+        <p>This clip Property is woring only when the position is "Absolute" </p>
+        <p> The Right and Bottom Part of the image has been clipped</p>
+
+        <img src="image/img.png"/>
+    </body>
+</html>
