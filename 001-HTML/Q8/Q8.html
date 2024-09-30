@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<hyml>
+
+    <head>
+        <title>Data Table</title>
+        <style>
+            #Outer-container {
+                display: flex;
+                padding: auto;
+                margin: auto;
+                /* gap: 10px; */
+                width: fit-content;
+                height: fit-content;
+            }
+
+            .row {
+                display: flex;
+                /* gap: 5px; */
+                /* border: 1px solid black; */
+                height: 100%;
+                align-items:  center;
+                width: 100%;
+                text-wrap: nowrap;
+                
+            }
+
+            .row div{
+                border: 1px solid black;
+                min-width: 30px;
+                width:fit-content;
+                height: 100%;
+                text-align: center;
+                vertical-align: middle;
+                display: flex;
+                align-items: center;
+                flex-grow: 1;
+                justify-content: space-around;
+                padding: 4px 4px;
+                box-sizing: border-box;               
+                
+            }            
+
+            .items {
+                display: flex;
+                text-align: center;
+                vertical-align: middle;
+                align-content: center;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                /* border: 1px solid black; */
+            }
+
+            .heading{
+                text-align: center;
+                border-top: 1px solid black;
+                border-right: 1px solid black;
+                border-left: 1px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="Outer-container">
+            <div class="column">
+                <div class="heading">Customer</div>
+                <div class="items">
+                    <div class="row">
+                        <div>Customer Name</div>
+                         
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="heading">Items</div>
+                <div class="items">
+                    <div class="row">
+                        <div>Item 1</div>
+                        <div>5</div>
+                        <div>$400.00</div>
+                    </div>
+
+                    <div class="row">
+                        <div>Item 2</div>
+                        <div>10</div>
+                        <div>$200.00</div>
+                    </div>
+
+                    <div class="row">
+                        <div>Item 3</div>
+                        <div>2</div>
+                        <div>$500.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="heading">Payments</div>
+                <div class="items">
+                    <div class="row">
+                        <div>12 Sep 2018</div>
+                        <div>$3,000.00</div>
+                    </div>
+
+                    <div class="row">
+                        <div>18 Sep 2018</div>
+                        <div>$2,000.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</hyml>
